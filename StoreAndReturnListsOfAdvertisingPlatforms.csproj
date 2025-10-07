@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <InvariantGlobalization>true</InvariantGlobalization>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.0.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+        <PackageReference Include="xunit" Version="2.9.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="wwwroot\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="StoreAndReturnListsOfAdvertisingPlatforms.Tests\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="StoreAndReturnListsOfAdvertisingPlatforms.Tests\obj\project.packagespec.json" />
+      <_ContentIncludedByDefault Remove="StoreAndReturnListsOfAdvertisingPlatforms.Tests\obj\StoreAndReturnListsOfAdvertisingPlatforms.Tests.csproj.nuget.dgspec.json" />
+    </ItemGroup>
+
+</Project>
